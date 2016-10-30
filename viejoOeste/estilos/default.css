@@ -1,0 +1,78 @@
+body {
+    background-color: #000000;
+    background-image:url('../imagenes/fondopagina.jpg');
+    background-size: 100%;
+    color: #000000;
+}
+
+section {
+    background: url('../imagenes/trasparente.png');
+    position: absolute;
+    left: 0px;
+    width: 800px;
+    float: left;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px #666666;
+}
+
+canvas {
+    position: relative;
+    top: 0px;
+    left: 80px;
+    background: transparent;
+    border: 2px solid;
+    border-color: #ffffff;
+}
+
+aside {
+    background: url('../imagenes/trasparente.png');
+    position: absolute;
+    left: 810px;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px #666666;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+}
+
+#marcoinferior {
+    background: url('../imagenes/trasparente.png') repeat-x;
+    height: 110px;
+    width: 970px;
+    border: 2px solid;
+    border-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px #666666;
+}
+
+#logoud {
+    height: 100px;
+    position: relative;
+    left: 10px;
+    display: inline;
+}
+
+.content-footer {
+    display: inline-block;
+    position: relative;
+}
+#content-footer-1{
+    left: 100px;
+}
+#content-footer-2{
+    left: 300px;
+}
+.submarcocentrado{
+    text-align: center;
+}
+
+.content-popup {
+    text-align: center;
+    padding: 10px;
+}

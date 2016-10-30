@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viejo Oeste</title>
+    <link rel="stylesheet" href="estilos/default.css">
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/Game.js"></script>
+    <script type="text/javascript" src="js/Background.js"></script>
+    <script type="text/javascript" src="js/Drawable.js"></script>
+    <script type="text/javascript" src="js/Vaquero.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+</head>
+<body onload="init()">
+<header>
+    <h1>VIEJO OESTE</h1>
+</header>
+<section>
+    <div id="marcocontenido">
+        <!-- El canvas para el marco mostrar el juego -->
+        <canvas id="background" width="600" height="360">
+            Navegador no soportado. Por favor utilice otro.
+        </canvas>
+    </div>
+</section>
+<aside>
+    <div id="marcoderecho">
+        <table>
+            <tr>
+                <th colspan="2"><h3>Controles del juego</h3></th>
+            </tr>
+            <tr>
+                <th><img src="imagenes/tecla2.jpg" height="50"/></th>
+                <th>Derecha</th>
+            </tr>
+            <tr>
+                <th><img src="imagenes/tecla1.jpg" height="50"/></th>
+                <th>Izquierda</th>
+            </tr>
+            <tr>
+                <th><img src="imagenes/tecla3.jpg" height="50"/></th>
+                <th>Salto</th>
+            </tr>
+            <tr>
+                <th><img src="imagenes/tecla4.jpg" height="50"/></th>
+                <th>Agacharse</th>
+            </tr>
+            <tr>
+                <th>c</th>
+                <th>Dispara</th>
+            </tr>
+        </table>
+    </div>
+</aside>
+<footer>
+    <div id="marcoinferior">
+        <img id="logoud" src="imagenes/logo_udistrital.png"/>
+        <div id="content-footer-1" class="content-footer">
+            <div class="submarcocentrado">
+                <p>Universidad Distrital Francisco Jose De Caldas<br/>
+                    Facultad De Ingenier&iacute;a <br/>
+                    Ingenier&iacute;a de Sistemas <br/>
+                    2016</p>
+            </div>
+        </div>
+        <div id="content-footer-2" class="content-footer">
+            <div class="submarcocentrado">
+                <p>Neider Fajardo<br/>
+                    Edwin Hastamorir<br/>
+                    Andr&eacute;s Hastamorir</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<audio id="dispara">
+    <source src="sonidos/disparo.mp3" type="audio/mpeg">
+    Tu navegador no es compatible
+</audio>
+<audio id="pierde">
+    <source src="sonidos/muerto.mp3" type="audio/mpeg">
+    Tu navegador no es compatible
+</audio>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<head>
+<script language="javascript" type="text/javascript">
+var imageNo = 2;
+function swapImage() {
+image = document.getElementById('image')
+switch (imageNo) {
+ case 1:
+   image.src = "imagenes/vaquero/vaquero01.jpeg"
+   imageNo = 2
+   document.getElementById('content').style.display = 'none'
+   return(false);
+case 2:
+   image.src = "imagenes/vaquero/vaquero02.jpeg"
+   imageNo = 3
+    document.getElementById('content').style.display = 'block'
+    return(false);
+case 3:
+   
+}
+}
+</script>
+ </head>
+
+ <body>
+  <h4><a href="#"><img id="image" name="image" src="imagenes/vaquero/vaquero01.jpeg" border="0" onclick="swapImage();"/></a></h4>
+  <div id="content" style="display:none">This content toggles</span>
+ </body>

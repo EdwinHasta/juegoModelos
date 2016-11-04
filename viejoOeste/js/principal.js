@@ -1,41 +1,30 @@
 /***************
- * Código generado a partir de las contribuciones de:
- * https://github.com/straker/galaxian-canvas-game/tree/master/part1
+ * Código generado siguiendo el tutorial publicado en:
+ * http://blog.sklambert.com/galaxian-html5-game/
  *
  ***************/
 
 /**
- * Inicializa el juego y lo inicia
+ * Inicializar el Juego y empezar
  */
 var game = new Game();
-//var jugando;
-
-//$(document).ready(inicio);
-//$(document).keydown(capturaTeclado);
 
 function init() {
-    //jugando = true;
-    if (game.init())
-        game.start();
+	game.init();
 }
 
 /**
- * Define un objeto para contener todas las imágenes del juego.
- * De este modo las imágenes son creadas una sola vez.
- * Este tipo de objetos son conocidos como Singleton.
+ * requestAnim creado por Paul Irish
+ * Primero busca la API que optimiza el ciclo de animación
+ * de otro modo asigna un valor por default a setTimeout().
  */
-var imageRepository = new function () {
-    // Define las imágenes.
-    this.empty = null;
-    this.background = new Image();
-    this.cowboy = new Image();
-
-    // Define la fuente de las imágenes.
-    this.background.src = "imagenes/bg.png";
-    this.cowboy.src = "imagenes/vaquero01.jpeg";
-}
-
-// Define el Background para heredar las propiedades desde Drawable
-Background.prototype = new Drawable();
-// Define el Vaquero para heredar las propiedades desde Drawable
-Vaquero.prototype = new Drawable();
+window.requestAnimFrame = (function(){
+	return  window.requestAnimationFrame       ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame    ||
+			window.oRequestAnimationFrame      ||
+			window.msRequestAnimationFrame     ||
+			function(/* funcion */ callback, /* Elemento DOM */ element){
+				window.setTimeout(callback, 1000 / 60);
+			};
+})();
